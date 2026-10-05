@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Love ❤️</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+        background: linear-gradient(135deg, #ff4d6d, #c9184a, #720026);
+        min-height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        padding: 80px 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .heart {
+        font-size: 100px;
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.25);
+        }
+    }
+
+    button {
+        margin-top: 25px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        background: white;
+        color: #c9184a;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #ffe5ec;
+    }
+
+    #message {
+        display: none;
+        margin-top: 25px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .floating-heart {
+        position: absolute;
+        bottom: -50px;
+        font-size: 30px;
+        animation: float 6s linear infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(-110vh);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="heart">❤️</div>
+
+    <h1>My Love</h1>
+
+    <p>
+        Welcome to my little world of love ❤️
+        <br>
+        Every moment is special.
+        <br>
+        Keep smiling and stay happy! 😊
+    </p>
+
+    <button onclick="showMessage()">
+        Click Here ❤️
+    </button>
+
+    <div id="message">
+        You are very special! ❤️✨
+    </div>
+
+</div>
+
+<script>
+
+function showMessage() {
+    document.getElementById("message").style.display = "block";
+}
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+    heart.innerHTML = "❤️";
+
+    heart.style
+</body>
+</html>
